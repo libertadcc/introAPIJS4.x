@@ -1,8 +1,10 @@
-import Map from 'https://js.arcgis.com/4.19/@arcgis/core/Map.js'
+
+
+import Map from 'https://js.arcgis.com/4.19/@arcgis/core/Map.js';
 import MapView from "https://js.arcgis.com/4.19/@arcgis/core/views/MapView.js";
 import esriConfig from "https://js.arcgis.com/4.19/@arcgis/core/config.js";
 
-esriConfig.apiKey = "AAPK910bc52162d04535b4b2e399d655b842-B8-L-B-bSHMrLN2KVLmjffN-wrL_S3hXWvzpGoUceNidwHU5YxKxYF9dcKDp9xH";
+esriConfig.apiKey = "tu api key";
 
 const map = new Map({
     basemap: "arcgis-oceans" // https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap
@@ -37,5 +39,6 @@ view.on('click', (event) => {
     });
     // Cambiarle el zoom (vemos propiedades)
     view.zoom = 13;
+    // También podemos cambiar el mapa base
     // map.basemap = 'arcgis-navigation'
 });

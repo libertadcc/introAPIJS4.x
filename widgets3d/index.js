@@ -4,12 +4,11 @@ import DirectLineMeasurement3D from "https://js.arcgis.com/4.19/@arcgis/core/wid
 import ElevationProfile from "https://js.arcgis.com/4.19/@arcgis/core/widgets/ElevationProfile.js";
 import esriConfig from "https://js.arcgis.com/4.19/@arcgis/core/config.js";
 
-esriConfig.apiKey = "AAPK910bc52162d04535b4b2e399d655b842-B8-L-B-bSHMrLN2KVLmjffN-wrL_S3hXWvzpGoUceNidwHU5YxKxYF9dcKDp9xH";
+esriConfig.apiKey = "tu api key";
 
 const map = new Map({
     basemap: "satellite", // https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap
     ground: "world-elevation"
-    //ground: "world-topobathymetry"
 });
 
 const view = new SceneView({

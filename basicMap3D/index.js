@@ -3,7 +3,7 @@ import SceneView from "https://js.arcgis.com/4.19/@arcgis/core/views/SceneView.j
 import esriConfig from "https://js.arcgis.com/4.19/@arcgis/core/config.js";
 import SceneLayer from "https://js.arcgis.com/4.19/@arcgis/core/layers/SceneLayer.js";
 
-esriConfig.apiKey = "AAPK910bc52162d04535b4b2e399d655b842-B8-L-B-bSHMrLN2KVLmjffN-wrL_S3hXWvzpGoUceNidwHU5YxKxYF9dcKDp9xH";
+esriConfig.apiKey = "tu api key";
 
 const map = new Map({
     basemap: "arcgis-terrain", // https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap
@@ -26,8 +26,9 @@ const view = new SceneView({
     }
 });
 
+// Cómo añadir una escena 3D
 const madrid = new SceneLayer({
     url: 'https://tiles.arcgis.com/tiles/lnFkorfBb3ma2riJ/arcgis/rest/services/EdificiosMadrid_LOD1v2/SceneServer'
 })
 
-map.add(madrid)
+map.add(madrid);
